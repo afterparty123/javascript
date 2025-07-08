@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>Enter password?</p>
+
+<p><input type="text" id="magicWord"></p>
+<p><button id="checkMagicWord">Enter</button></p>
+
+<script type="text/javascript">
+
+  document.getElementById("checkMagicWord").onclick = function() {
+
+    var magicWordEntered = document.getElementById("magicWord").value;
+
+    var magicWord = "abracadabra";
+
+    if (magicWordEntered == magicWord) {
+      alert("You got it!");
+    } else {
+      alert("Nope, try again!");
+    }
+
+  }
+
+</script>
+
+    
+</body>
+</html>
